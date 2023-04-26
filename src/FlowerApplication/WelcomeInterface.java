@@ -101,7 +101,6 @@ welLable.setIcon(scaledIcon);
         jLabel1.setBounds(280, 160, 690, 200);
 
         welLable.setForeground(new java.awt.Color(240, 240, 240));
-        welLable.setIcon(new javax.swing.ImageIcon("C:\\Users\\st\\Pictures\\pinki.jpg")); // NOI18N
         welLable.setMaximumSize(new java.awt.Dimension(999, 598));
         welLable.setMinimumSize(new java.awt.Dimension(999, 598));
         welLable.setPreferredSize(new java.awt.Dimension(999, 598));
