@@ -25,7 +25,7 @@ public class ErrorInterface extends javax.swing.JFrame {
     }
 
 public void scaleimglbl() {
-ImageIcon icon = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\errorIcon.png");
+ImageIcon icon = new ImageIcon("..\\errorIcon.png");
 Image img = icon.getImage();
 Image imgScale = img.getScaledInstance(imageLable.getWidth(), imageLable.getHeight(), Image.SCALE_SMOOTH);
 ImageIcon scaledIcon = new ImageIcon(imgScale);
