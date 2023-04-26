@@ -50,7 +50,6 @@ public class SignupInterface extends javax.swing.JFrame {
         signupButton.setFont(new java.awt.Font("Gabriola", 1, 24)); // NOI18N
         signupButton.setForeground(new java.awt.Color(217, 132, 155));
         signupButton.setText("Sign Up");
-        signupButton.setBorder(null);
         signupButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 signupButtonActionPerformed(evt);
@@ -91,14 +90,13 @@ public class SignupInterface extends javax.swing.JFrame {
 
         goToLogin.setBackground(new java.awt.Color(242, 203, 189));
         goToLogin.setText("Go To Login");
-        goToLogin.setBorder(null);
         goToLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 goToLoginActionPerformed(evt);
             }
         });
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\st\\Downloads\\vectorPinkFlower.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\vectorPinkFlower.png")); // NOI18N
         jLabel4.setText("jLabel4");
 
         jLabel3.setText("Already have account?");

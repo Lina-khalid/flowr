@@ -375,7 +375,7 @@
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\st\Downloads\pinkF.jpg"/>
+                  <Image iconType="2" name="C:\Users\st\Documents\NetBeansProjects\FlowerShop-main\pinkF.jpg"/>
                 </Property>
               </Properties>
             </Component>

@@ -14,28 +14,28 @@ public class CartInterface extends javax.swing.JFrame {
     
  
 public void scaleimglbl() {
-ImageIcon icon = new ImageIcon("C:\\Users\\st\\Downloads\\shoppingCart.png");
+ImageIcon icon = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\shoppingCart.png");
 Image img = icon.getImage();
 Image imgScale = img.getScaledInstance(cartLable.getWidth(), cartLable.getHeight(), Image.SCALE_SMOOTH);
 ImageIcon scaledIcon = new ImageIcon(imgScale);
 cartLable.setIcon(scaledIcon);
 
- img = new ImageIcon("C:\\Users\\st\\Downloads\\hhome.jpg").getImage();
+ img = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\hhome.jpg").getImage();
  imgScale = img.getScaledInstance(jButton2.getWidth(), jButton2.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 jButton2.setIcon(scaledIcon);
 
- img = new ImageIcon("C:\\Users\\st\\Downloads\\ccart.jpg").getImage();
+ img = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\ccart.jpg").getImage();
  imgScale = img.getScaledInstance(jButton1.getWidth(), jButton1.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 jButton1.setIcon(scaledIcon);
 
- img = new ImageIcon("C:\\Users\\st\\Downloads\\signout.png").getImage();
+ img = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\signout.png").getImage();
  imgScale = img.getScaledInstance(jButton3.getWidth(), jButton3.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 jButton3.setIcon(scaledIcon);
 
-img = new ImageIcon("C:\\Users\\st\\Downloads\\pinkish.png").getImage();
+img = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\pinkish.png").getImage();
  imgScale = img.getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 jLabel1.setIcon(scaledIcon);

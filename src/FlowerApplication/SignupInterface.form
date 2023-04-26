@@ -145,9 +145,6 @@
               <Color blue="9b" green="84" red="d9" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Sign Up"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="signupButtonActionPerformed"/>
@@ -237,9 +234,6 @@
               <Color blue="bd" green="cb" red="f2" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Go To Login"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="goToLoginActionPerformed"/>
@@ -248,7 +242,7 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\st\Downloads\vectorPinkFlower.png"/>
+              <Image iconType="2" name="C:\Users\st\Documents\NetBeansProjects\FlowerShop-main\vectorPinkFlower.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel4"/>
           </Properties>

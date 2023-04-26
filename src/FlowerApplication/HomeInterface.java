@@ -18,42 +18,42 @@ public class HomeInterface extends javax.swing.JFrame {
 
      
      public void scaleimglbl() {
-Image img = new ImageIcon("C:\\Users\\st\\Downloads\\hhome.jpg").getImage();
+Image img = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\hhome.jpg").getImage();
 Image imgScale = img.getScaledInstance(homeButton.getWidth(), homeButton.getHeight(), Image.SCALE_SMOOTH);
 ImageIcon scaledIcon = new ImageIcon(imgScale);
 homeButton.setIcon(scaledIcon);
 
- img = new ImageIcon("C:\\Users\\st\\Downloads\\ccart.jpg").getImage();
+ img = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\ccart.jpg").getImage();
  imgScale = img.getScaledInstance(cartButton.getWidth(), cartButton.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 cartButton.setIcon(scaledIcon);
 
- img = new ImageIcon("C:\\Users\\st\\Downloads\\signout.png").getImage();
+ img = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\signout.png").getImage();
  imgScale = img.getScaledInstance(cartButton.getWidth(), cartButton.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 signOutButton.setIcon(scaledIcon);
 
-img = new ImageIcon("C:\\Users\\st\\Downloads\\blueTulip.jpg").getImage();
+img = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\blueTulip.jpg").getImage();
  imgScale = img.getScaledInstance(flowerPicLabel1.getWidth(), flowerPicLabel1.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 flowerPicLabel1.setIcon(scaledIcon);
         
- img = new ImageIcon("C:\\Users\\st\\Downloads\\purpuleF.jpg").getImage();
+ img = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\purpuleF.jpg").getImage();
  imgScale = img.getScaledInstance(flowerPicLabel2.getWidth(), flowerPicLabel2.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 flowerPicLabel2.setIcon(scaledIcon);
         
-        img = new ImageIcon("C:\\Users\\st\\Downloads\\whiteF.jpg").getImage();
+        img = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\whiteF.jpg").getImage();
  imgScale = img.getScaledInstance(flowerPicLabel4.getWidth(), flowerPicLabel4.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 flowerPicLabel4.setIcon(scaledIcon);
         
-        img = new ImageIcon("C:\\Users\\st\\Downloads\\pinkF.jpg").getImage();
+        img = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\pinkF.jpg").getImage();
  imgScale = img.getScaledInstance(flowerPicLabel3.getWidth(), flowerPicLabel3.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 flowerPicLabel3.setIcon(scaledIcon);
         
-        img = new ImageIcon("C:\\Users\\st\\Downloads\\flowers.jpg").getImage();
+        img = new ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\flowers.jpg").getImage();
  imgScale = img.getScaledInstance(flowers.getWidth(), flowers.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 flowers.setIcon(scaledIcon);
@@ -275,7 +275,7 @@ flowers.setIcon(scaledIcon);
         flowerPanel1.setPreferredSize(new java.awt.Dimension(185, 283));
 
         flowerPicLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        flowerPicLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\st\\Downloads\\pinkF.jpg")); // NOI18N
+        flowerPicLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\pinkF.jpg")); // NOI18N
 
         flowerNameLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         flowerNameLabel1.setForeground(new java.awt.Color(102, 102, 102));

@@ -141,7 +141,7 @@ public class LoginInterface extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\st\\Downloads\\vectorPinkFlower.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\vectorPinkFlower.png")); // NOI18N
         jLabel1.setText("jLabel1");
 
         loginButton.setBackground(new java.awt.Color(217, 132, 155));
