@@ -12,37 +12,10 @@ import javax.swing.ImageIcon;
 
 public class CartInterface extends javax.swing.JFrame {
     
- 
-public void scaleimglbl() {
-ImageIcon icon = new ImageIcon("shoppingCart.png");
-Image img = icon.getImage();
-Image imgScale = img.getScaledInstance(cartLable.getWidth(), cartLable.getHeight(), Image.SCALE_SMOOTH);
-ImageIcon scaledIcon = new ImageIcon(imgScale);
-cartLable.setIcon(scaledIcon);
 
- img = new ImageIcon("hhome.jpg").getImage();
- imgScale = img.getScaledInstance(jButton2.getWidth(), jButton2.getHeight(), Image.SCALE_SMOOTH);
- scaledIcon = new ImageIcon(imgScale);
-jButton2.setIcon(scaledIcon);
-
- img = new ImageIcon("ccart.jpg").getImage();
- imgScale = img.getScaledInstance(jButton1.getWidth(), jButton1.getHeight(), Image.SCALE_SMOOTH);
- scaledIcon = new ImageIcon(imgScale);
-jButton1.setIcon(scaledIcon);
-
- img = new ImageIcon("signout.png").getImage();
- imgScale = img.getScaledInstance(jButton3.getWidth(), jButton3.getHeight(), Image.SCALE_SMOOTH);
- scaledIcon = new ImageIcon(imgScale);
-jButton3.setIcon(scaledIcon);
-
-img = new ImageIcon("pinkish.png").getImage();
- imgScale = img.getScaledInstance(cartLable.getWidth(), cartLable.getHeight(), Image.SCALE_SMOOTH);
- scaledIcon = new ImageIcon(imgScale);
-cartLable.setIcon(scaledIcon);
-}
     public CartInterface() {
         initComponents();
-//        scaleimglbl();
+ 
         // To hide the addition confirmation sentence
         successfulAdditionLabel.setVisible(false);
         // Create object of Cart
@@ -226,8 +199,6 @@ cartLable.setIcon(scaledIcon);
         successfulAdditionLabel.setFont(new java.awt.Font("Gabriola", 1, 24)); // NOI18N
         successfulAdditionLabel.setForeground(new java.awt.Color(217, 132, 155));
         successfulAdditionLabel.setText("Your order has been successfully sent.");
-
-        cartLable.setIcon(new javax.swing.ImageIcon("C:\\Users\\st\\Downloads\\shoppingCart.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

@@ -383,11 +383,6 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="cartLable">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\st\Downloads\shoppingCart.png"/>
-            </Property>
-          </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="cartLable"/>
           </AccessibilityProperties>

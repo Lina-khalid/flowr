@@ -10,17 +10,10 @@ import javax.swing.plaf.basic.BasicButtonUI;
 
 public class WelcomeInterface extends javax.swing.JFrame {
 
-//    public void scaleimglbl() {
-//ImageIcon icon = new ImageIcon("..\\pinki.jpg");
-//Image img = icon.getImage();
-//Image imgScale = img.getScaledInstance(welLable.getWidth(), welLable.getHeight(), Image.SCALE_SMOOTH);
-//ImageIcon scaledIcon = new ImageIcon(imgScale);
-//welLable.setIcon(scaledIcon);
-//}
+ 
     
     public WelcomeInterface() {
-        initComponents();
-//        scaleimglbl();
+        initComponents(); 
         // To change the appearance of the button
         JButton[] btns = {startButton};
         for (JButton btn : btns) {

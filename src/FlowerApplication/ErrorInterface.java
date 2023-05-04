@@ -20,17 +20,10 @@ public class ErrorInterface extends javax.swing.JFrame {
      * Creates new form ErrorInterface
      */
     public ErrorInterface() {
-        initComponents();
-//        scaleimglbl();
+        initComponents(); 
     }
 
-public void scaleimglbl() {
-ImageIcon icon = new ImageIcon("errorIcon.png");
-Image img = icon.getImage();
-Image imgScale = img.getScaledInstance(imageLable.getWidth(), imageLable.getHeight(), Image.SCALE_SMOOTH);
-ImageIcon scaledIcon = new ImageIcon(imgScale);
-imageLable.setIcon(scaledIcon);
-}
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -71,8 +64,6 @@ imageLable.setIcon(scaledIcon);
         ErrorMsg.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ErrorMsg.setText("Error Type");
         ErrorMsg.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-
-        imageLable.setIcon(new javax.swing.ImageIcon("C:\\Users\\st\\Downloads\\errorIcon.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
