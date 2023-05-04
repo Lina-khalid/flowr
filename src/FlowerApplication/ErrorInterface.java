@@ -21,7 +21,7 @@ public class ErrorInterface extends javax.swing.JFrame {
      */
     public ErrorInterface() {
         initComponents();
-        scaleimglbl();
+//        scaleimglbl();
     }
 
 public void scaleimglbl() {

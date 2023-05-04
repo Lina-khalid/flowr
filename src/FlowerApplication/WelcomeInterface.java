@@ -10,17 +10,17 @@ import javax.swing.plaf.basic.BasicButtonUI;
 
 public class WelcomeInterface extends javax.swing.JFrame {
 
-    public void scaleimglbl() {
-ImageIcon icon = new ImageIcon("..\\pinki.jpg");
-Image img = icon.getImage();
-Image imgScale = img.getScaledInstance(welLable.getWidth(), welLable.getHeight(), Image.SCALE_SMOOTH);
-ImageIcon scaledIcon = new ImageIcon(imgScale);
-welLable.setIcon(scaledIcon);
-}
+//    public void scaleimglbl() {
+//ImageIcon icon = new ImageIcon("..\\pinki.jpg");
+//Image img = icon.getImage();
+//Image imgScale = img.getScaledInstance(welLable.getWidth(), welLable.getHeight(), Image.SCALE_SMOOTH);
+//ImageIcon scaledIcon = new ImageIcon(imgScale);
+//welLable.setIcon(scaledIcon);
+//}
     
     public WelcomeInterface() {
         initComponents();
-        scaleimglbl();
+//        scaleimglbl();
         // To change the appearance of the button
         JButton[] btns = {startButton};
         for (JButton btn : btns) {
@@ -101,7 +101,6 @@ welLable.setIcon(scaledIcon);
         jLabel1.setBounds(280, 160, 690, 200);
 
         welLable.setForeground(new java.awt.Color(240, 240, 240));
-        welLable.setIcon(new javax.swing.ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\pinki.jpg")); // NOI18N
         welLable.setMaximumSize(new java.awt.Dimension(999, 598));
         welLable.setMinimumSize(new java.awt.Dimension(999, 598));
         welLable.setPreferredSize(new java.awt.Dimension(999, 598));

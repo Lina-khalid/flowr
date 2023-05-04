@@ -18,15 +18,15 @@ public class HomeInterface extends javax.swing.JFrame {
 
      
      public void scaleimglbl() {
-Image img = new ImageIcon("hhome.jpg").getImage();
-Image imgScale = img.getScaledInstance(homeButton.getWidth(), homeButton.getHeight(), Image.SCALE_SMOOTH);
-ImageIcon scaledIcon = new ImageIcon(imgScale);
-homeButton.setIcon(scaledIcon);
-
- img = new ImageIcon("ccart.jpg").getImage();
- imgScale = img.getScaledInstance(cartButton.getWidth(), cartButton.getHeight(), Image.SCALE_SMOOTH);
- scaledIcon = new ImageIcon(imgScale);
-cartButton.setIcon(scaledIcon);
+Image img ;//= new ImageIcon("..\\src\\guiIcon\\hhome.jpg").getImage();
+Image imgScale; //= img.getScaledInstance(homeButton.getWidth(), homeButton.getHeight(), Image.SCALE_SMOOTH);
+ImageIcon scaledIcon; //= new ImageIcon(imgScale);
+//homeButton.setIcon(scaledIcon);
+//
+// img = new ImageIcon("..\\src\\guiIcon\\ccart.jpg").getImage();
+// imgScale = img.getScaledInstance(cartButton.getWidth(), cartButton.getHeight(), Image.SCALE_SMOOTH);
+// scaledIcon = new ImageIcon(imgScale);
+//cartButton.setIcon(scaledIcon);
 
  img = new ImageIcon("signout.png").getImage();
  imgScale = img.getScaledInstance(cartButton.getWidth(), cartButton.getHeight(), Image.SCALE_SMOOTH);
@@ -54,16 +54,16 @@ flowerPicLabel4.setIcon(scaledIcon);
 flowerPicLabel3.setIcon(scaledIcon);
         
         img = new ImageIcon("flowers.jpg").getImage();
- imgScale = img.getScaledInstance(flowers.getWidth(), flowers.getHeight(), Image.SCALE_SMOOTH);
+ imgScale = img.getScaledInstance(flowerPicLabel5.getWidth(), flowerPicLabel5.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
-flowers.setIcon(scaledIcon);
+flowerPicLabel5.setIcon(scaledIcon);
 }
      
      
      
     public HomeInterface() {
         initComponents();
-        scaleimglbl();
+       
         // To change the appearance of the button
         JButton[] btns = {addButton1, addButton2, addButton3, addButton4};
         for (JButton btn : btns) {
@@ -155,7 +155,7 @@ flowers.setIcon(scaledIcon);
         flowerNameLabel3 = new javax.swing.JLabel();
         priceLabel3 = new javax.swing.JLabel();
         addButton3 = new javax.swing.JButton();
-        pink = new javax.swing.JTextField();
+        Bag = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         flowerPanel4 = new javax.swing.JPanel();
@@ -163,12 +163,12 @@ flowers.setIcon(scaledIcon);
         flowerNameLabel4 = new javax.swing.JLabel();
         addButton4 = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
-        white = new javax.swing.JTextField();
+        Vase = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
         priceLabel4 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
-        flowers = new javax.swing.JLabel();
+        flowerPicLabel5 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         javax.swing.JPanel menuPanel = new javax.swing.JPanel();
         cartButton = new javax.swing.JButton();
@@ -195,7 +195,7 @@ flowers.setIcon(scaledIcon);
         flowerPanel2.setPreferredSize(new java.awt.Dimension(185, 283));
 
         flowerPicLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        flowerPicLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\st\\Downloads\\pinkF2.jpg")); // NOI18N
+        flowerPicLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiIcon/Picture9.png"))); // NOI18N
 
         flowerNameLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         flowerNameLabel2.setForeground(new java.awt.Color(102, 102, 102));
@@ -232,19 +232,17 @@ flowers.setIcon(scaledIcon);
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, flowerPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(flowerPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(flowerPanel2Layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(priceLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel22))
                     .addComponent(flowerNameLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(flowerPicLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26))
             .addGroup(flowerPanel2Layout.createSequentialGroup()
-                .addGroup(flowerPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(flowerPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(addButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(flowerPanel2Layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(priceLabel2)
-                        .addGap(16, 16, 16)
-                        .addComponent(jLabel22)))
+                .addContainerGap()
+                .addComponent(addButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(flowerPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -258,11 +256,12 @@ flowers.setIcon(scaledIcon);
                 .addComponent(flowerNameLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(flowerPicLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(flowerPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel18)
                     .addComponent(priceLabel2)
                     .addComponent(jLabel22))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel18)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(flowerPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -275,7 +274,7 @@ flowers.setIcon(scaledIcon);
         flowerPanel1.setPreferredSize(new java.awt.Dimension(185, 283));
 
         flowerPicLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        flowerPicLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\st\\Documents\\NetBeansProjects\\FlowerShop-main\\pinkF.jpg")); // NOI18N
+        flowerPicLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiIcon/Picture8.png"))); // NOI18N
 
         flowerNameLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         flowerNameLabel1.setForeground(new java.awt.Color(102, 102, 102));
@@ -329,6 +328,9 @@ flowers.setIcon(scaledIcon);
             .addGroup(flowerPanel1Layout.createSequentialGroup()
                 .addGroup(flowerPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(flowerPanel1Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(flowerPicLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(flowerPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -336,13 +338,10 @@ flowers.setIcon(scaledIcon);
                             .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Blue, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(flowerPanel1Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(flowerPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(flowerPanel1Layout.createSequentialGroup()
-                                .addComponent(priceLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel21))
-                            .addComponent(flowerPicLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(62, 62, 62)
+                        .addComponent(priceLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel21)))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
         flowerPanel1Layout.setVerticalGroup(
@@ -351,12 +350,12 @@ flowers.setIcon(scaledIcon);
                 .addGap(23, 23, 23)
                 .addComponent(flowerNameLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(flowerPicLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(flowerPicLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(flowerPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(priceLabel1)
                     .addComponent(jLabel21))
-                .addGap(1, 1, 1)
+                .addGap(18, 18, 18)
                 .addGroup(flowerPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(flowerPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel17)
@@ -375,7 +374,7 @@ flowers.setIcon(scaledIcon);
 
         flowerNameLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         flowerNameLabel3.setForeground(new java.awt.Color(102, 102, 102));
-        flowerNameLabel3.setText("Pink Flower");
+        flowerNameLabel3.setText("Flower Bag");
 
         priceLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         priceLabel3.setForeground(new java.awt.Color(102, 102, 102));
@@ -389,8 +388,8 @@ flowers.setIcon(scaledIcon);
             }
         });
 
-        pink.setBackground(new java.awt.Color(240, 240, 240));
-        pink.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(240, 240, 240)));
+        Bag.setBackground(new java.awt.Color(240, 240, 240));
+        Bag.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(240, 240, 240)));
 
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel19.setText("QTY");
@@ -406,24 +405,25 @@ flowers.setIcon(scaledIcon);
             .addGroup(flowerPanel3Layout.createSequentialGroup()
                 .addGroup(flowerPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(flowerPanel3Layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
-                        .addComponent(flowerNameLabel3))
-                    .addGroup(flowerPanel3Layout.createSequentialGroup()
                         .addGap(27, 27, 27)
-                        .addGroup(flowerPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(flowerPanel3Layout.createSequentialGroup()
-                                .addComponent(priceLabel3)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel23))
-                            .addComponent(flowerPicLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(flowerPicLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(flowerPanel3Layout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addComponent(flowerNameLabel3)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, flowerPanel3Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(priceLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel23)
+                .addGap(56, 56, 56))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, flowerPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(addButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(flowerPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pink, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Bag, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(14, 14, 14))
         );
         flowerPanel3Layout.setVerticalGroup(
@@ -431,17 +431,18 @@ flowers.setIcon(scaledIcon);
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, flowerPanel3Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(flowerNameLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(flowerPicLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(flowerPicLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(flowerPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel19)
                     .addComponent(priceLabel3)
                     .addComponent(jLabel23))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel19)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(flowerPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pink, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Bag, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -451,7 +452,7 @@ flowers.setIcon(scaledIcon);
 
         flowerNameLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         flowerNameLabel4.setForeground(new java.awt.Color(102, 102, 102));
-        flowerNameLabel4.setText("White Flower ");
+        flowerNameLabel4.setText("Flower Vase ");
 
         addButton4.setBackground(new java.awt.Color(102, 102, 102));
         addButton4.setText("ADD");
@@ -466,13 +467,8 @@ flowers.setIcon(scaledIcon);
         jLabel16.setForeground(new java.awt.Color(169, 156, 181));
         jLabel16.setText("<html> <body><div align=\"center\"> Choose the flowers you like<br>  and leave the arrangement to us</div> </body> </html>");
 
-        white.setBackground(new java.awt.Color(240, 240, 240));
-        white.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(240, 240, 240)));
-        white.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                whiteActionPerformed(evt);
-            }
-        });
+        Vase.setBackground(new java.awt.Color(240, 240, 240));
+        Vase.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(240, 240, 240)));
 
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel20.setText("QTY");
@@ -504,24 +500,21 @@ flowers.setIcon(scaledIcon);
                         .addGroup(flowerPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(flowerPanel4Layout.createSequentialGroup()
-                                .addComponent(white, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Vase, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(30, 30, 30)
                                 .addComponent(priceLabel4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel25)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(flowerPicLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         flowerPanel4Layout.setVerticalGroup(
             flowerPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(flowerPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(flowerPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(flowerPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(flowerPanel4Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(flowerPicLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(flowerPanel4Layout.createSequentialGroup()
+                        .addContainerGap()
                         .addComponent(flowerNameLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -530,16 +523,17 @@ flowers.setIcon(scaledIcon);
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(flowerPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(addButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(white, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Vase, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(priceLabel4)
-                            .addComponent(jLabel25))))
+                            .addComponent(jLabel25)))
+                    .addComponent(flowerPicLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel6.setBackground(new java.awt.Color(255, 204, 204));
 
-        flowers.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        flowers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiIcon/Picture13.png"))); // NOI18N
+        flowerPicLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flowerPicLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiIcon/Picture13.png"))); // NOI18N
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(102, 102, 102));
@@ -555,16 +549,16 @@ flowers.setIcon(scaledIcon);
                         .addGap(30, 30, 30)
                         .addComponent(jLabel14))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(flowers)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addComponent(flowerPicLabel5)))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                 .addComponent(jLabel14)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(flowers, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(flowerPicLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -602,7 +596,7 @@ flowers.setIcon(scaledIcon);
         signOutButton.setBackground(new java.awt.Color(217, 132, 155));
         signOutButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         signOutButton.setForeground(new java.awt.Color(255, 255, 255));
-        signOutButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\st\\Downloads\\signout.png")); // NOI18N
+        signOutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiIcon/icons8-sign-out-30.png"))); // NOI18N
         signOutButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 signOutButtonActionPerformed(evt);
@@ -681,9 +675,9 @@ flowers.setIcon(scaledIcon);
                         .addComponent(menuPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(flowerPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 302, Short.MAX_VALUE)
-                            .addComponent(flowerPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 302, Short.MAX_VALUE)
-                            .addComponent(flowerPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                            .addComponent(flowerPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE)
+                            .addComponent(flowerPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE)
+                            .addComponent(flowerPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -798,7 +792,7 @@ try
 try 
         {
             // Read customer input 
-        int pinkQ = Integer.parseInt(pink.getText());
+        int pinkQ = Integer.parseInt(Bag.getText());
        if(pinkQ <=0)
            throw new IvalidValue("Negative number & zero not allowed");
         
@@ -822,7 +816,7 @@ try
              
          }
         // To delete after added the item to cart
-        pink.setText(null);
+        Bag.setText(null);
 
     }//GEN-LAST:event_addButton3ActionPerformed
 
@@ -830,7 +824,7 @@ try
 try 
         {
             // Read customer input 
-        int whiteQ = Integer.parseInt(white.getText());
+        int whiteQ = Integer.parseInt(Vase.getText());
        if(whiteQ <=0)
            throw new IvalidValue("Negative number & zero not allowed");
         
@@ -854,7 +848,7 @@ try
              
          }
         // To delete after added the item to cart
-        white.setText(null);
+        Vase.setText(null);
     }//GEN-LAST:event_addButton4ActionPerformed
 
     private void homeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeButtonActionPerformed
@@ -866,10 +860,6 @@ try
         homeInterface.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_homeButtonActionPerformed
-
-    private void whiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_whiteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_whiteActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -904,8 +894,10 @@ try
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField Bag;
     private javax.swing.JTextField Blue;
     private javax.swing.JTextField Purple;
+    private javax.swing.JTextField Vase;
     private javax.swing.JButton addButton1;
     private javax.swing.JButton addButton2;
     private javax.swing.JButton addButton3;
@@ -923,7 +915,7 @@ try
     private javax.swing.JLabel flowerPicLabel2;
     private javax.swing.JLabel flowerPicLabel3;
     private javax.swing.JLabel flowerPicLabel4;
-    private javax.swing.JLabel flowers;
+    private javax.swing.JLabel flowerPicLabel5;
     private javax.swing.JButton homeButton;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel16;
@@ -940,12 +932,10 @@ try
     private javax.swing.JPanel jPanel8;
     private javax.swing.JLabel pageTitleLabel1;
     private javax.swing.JLabel pageTitleLabel2;
-    private javax.swing.JTextField pink;
     private javax.swing.JLabel priceLabel1;
     private javax.swing.JLabel priceLabel2;
     private javax.swing.JLabel priceLabel3;
     private javax.swing.JLabel priceLabel4;
     private javax.swing.JButton signOutButton;
-    private javax.swing.JTextField white;
     // End of variables declaration//GEN-END:variables
 }
