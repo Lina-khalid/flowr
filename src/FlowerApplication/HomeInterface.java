@@ -18,42 +18,42 @@ public class HomeInterface extends javax.swing.JFrame {
 
      
      public void scaleimglbl() {
-Image img = new ImageIcon("..\\hhome.jpg").getImage();
+Image img = new ImageIcon("hhome.jpg").getImage();
 Image imgScale = img.getScaledInstance(homeButton.getWidth(), homeButton.getHeight(), Image.SCALE_SMOOTH);
 ImageIcon scaledIcon = new ImageIcon(imgScale);
 homeButton.setIcon(scaledIcon);
 
- img = new ImageIcon("..\\ccart.jpg").getImage();
+ img = new ImageIcon("ccart.jpg").getImage();
  imgScale = img.getScaledInstance(cartButton.getWidth(), cartButton.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 cartButton.setIcon(scaledIcon);
 
- img = new ImageIcon("..\\signout.png").getImage();
+ img = new ImageIcon("signout.png").getImage();
  imgScale = img.getScaledInstance(cartButton.getWidth(), cartButton.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 signOutButton.setIcon(scaledIcon);
 
-img = new ImageIcon("..\\blueTulip.jpg").getImage();
+img = new ImageIcon("blueTulip.jpg").getImage();
  imgScale = img.getScaledInstance(flowerPicLabel1.getWidth(), flowerPicLabel1.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 flowerPicLabel1.setIcon(scaledIcon);
         
- img = new ImageIcon("..\\purpuleF.jpg").getImage();
+ img = new ImageIcon("purpuleF.jpg").getImage();
  imgScale = img.getScaledInstance(flowerPicLabel2.getWidth(), flowerPicLabel2.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 flowerPicLabel2.setIcon(scaledIcon);
         
-        img = new ImageIcon("..\\whiteF.jpg").getImage();
+        img = new ImageIcon("whiteF.jpg").getImage();
  imgScale = img.getScaledInstance(flowerPicLabel4.getWidth(), flowerPicLabel4.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 flowerPicLabel4.setIcon(scaledIcon);
         
-        img = new ImageIcon("..\\pinkF.jpg").getImage();
+        img = new ImageIcon("pinkF.jpg").getImage();
  imgScale = img.getScaledInstance(flowerPicLabel3.getWidth(), flowerPicLabel3.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 flowerPicLabel3.setIcon(scaledIcon);
         
-        img = new ImageIcon("..\\flowers.jpg").getImage();
+        img = new ImageIcon("flowers.jpg").getImage();
  imgScale = img.getScaledInstance(flowers.getWidth(), flowers.getHeight(), Image.SCALE_SMOOTH);
  scaledIcon = new ImageIcon(imgScale);
 flowers.setIcon(scaledIcon);
